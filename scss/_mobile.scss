@@ -1,9 +1,15 @@
 // XL for Widescreens
 @include mediaXL {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 // L for Desktops and Laptops
 @include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 // M for Tablets and small laptops
@@ -55,6 +61,10 @@
 
     grid-template-columns: 1fr;
   }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 // S for mobile phones
@@ -67,8 +77,12 @@
       .lg-heading {
         line-height: 1;
         margin-top: 10vh;
-        font-size: 1 rem;
+        font-size: 1rem;
       }
     }
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
